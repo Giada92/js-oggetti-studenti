@@ -99,12 +99,16 @@ console.log(etaUtente);
 
 
 
-var nuovoStudente = {};
+var nuovoStudente = {
+    nome : nomeUtente,
+    cognome : cognomeUtente,
+    eta : etaUtente
+};
 
-nuovoStudente.nome = nomeUtente;
+/* nuovoStudente.nome = nomeUtente;
 nuovoStudente.cognome = cognomeUtente;
 nuovoStudente.eta = etaUtente;
-
+ */
 console.log(nuovoStudente);
 
 //aggiugere il nuovo studente nell'array di studenti
