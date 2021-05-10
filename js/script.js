@@ -73,3 +73,40 @@ for (var i = 0; i < studenti.length; i++) {
 
 
 //Dare la possibilità all'utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell'ordine: nome, cognome e età.
+do{
+
+    var nomeUtente = prompt("Inserisci il nome del nuovo studente!").trim();
+    
+}while(!isNaN(nomeUtente));
+
+console.log(nomeUtente);
+
+do{
+
+    var cognomeUtente = prompt("Inserisci il cognome del nuovo studente!").trim();
+    
+}while(!isNaN(cognomeUtente));
+
+console.log(cognomeUtente);
+
+do{
+
+    var etaUtente = parseInt(prompt("Inserisci l'età del nuovo studente!"));
+    
+}while(isNaN(etaUtente));
+
+console.log(etaUtente);
+
+
+
+var nuovoStudente = {};
+
+nuovoStudente.nome = nomeUtente;
+nuovoStudente.cognome = cognomeUtente;
+nuovoStudente.eta = etaUtente;
+
+console.log(nuovoStudente);
+
+//aggiugere il nuovo studente nell'array di studenti
+studenti.push(nuovoStudente);
+console.log(studenti);
